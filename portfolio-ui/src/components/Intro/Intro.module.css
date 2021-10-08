@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.leftContainer{
+    flex: 1;
+}
+
+.rightContainer{
+    flex: 1;
+}
+
+.leftWrapper{
+    padding: 50px;
+}
+
+.leftIntro{
+
+}
+
+.leftName {
+
+}
