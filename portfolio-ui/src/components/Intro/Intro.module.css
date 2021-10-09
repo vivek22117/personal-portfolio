@@ -1,11 +1,13 @@
 .container {
     display: flex;
     height: 100vh;
-    background-color: aqua;
 }
 
 .leftContainer{
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rightContainer{
@@ -14,12 +16,53 @@
 
 .leftWrapper{
     padding: 50px;
+    height: 50%;
+    background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .leftIntro{
-
+    font-size: 30px;
+    font-weight: 300;
 }
 
 .leftName {
+    font-size: 60px;
+}
 
+.leftTitle {
+    height: 50px;
+    overflow: hidden;
+}
+
+.titleWrapper{
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    75% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+
+}
+
+.titleItem{
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #59b256;
+    display: flex;
+    align-items: center;
 }
