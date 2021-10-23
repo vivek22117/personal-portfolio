@@ -12,12 +12,12 @@
 
 .rightContainer{
     flex: 1;
+    position: relative;
 }
 
 .leftWrapper{
     padding: 50px;
     height: 50%;
-    background-color: crimson;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,4 +65,27 @@
     color: #59b256;
     display: flex;
     align-items: center;
+}
+
+.svgScroll{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.rightBackground{
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background-color: #59b256;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.rightImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
 }
